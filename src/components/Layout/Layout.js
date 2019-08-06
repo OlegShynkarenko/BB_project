@@ -1,6 +1,6 @@
 import React from 'react';
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core';
+import { jsx } from '@emotion/core';
 
 import styles from './LayoutStyles'
 

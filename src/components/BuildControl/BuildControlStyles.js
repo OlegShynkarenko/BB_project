@@ -29,24 +29,30 @@ const buildControlStyles = {
       background: '#AC9980',
       color: '#ccc',
       cursor: 'not-allowed'
-    },
+    }
   },
   less: {
     background: '#D39952',
     color: 'white',
-    '&:hover, &:active': {
+    '&:hover': {
       background: '#DAA972',
       color: 'white'
+    },
+    '&:active': {
+      background: 'green'
     }
   },
   more: {
     background: '#8F5E1E',
     color: 'white',
-    '&:hover, &:active': {
+    '&:hover': {
       background: '#99703F',
       color: 'white'
+    },
+    '&:active': {
+      background: 'green'
     }
   },
-}
+};
 
 export default buildControlStyles;
