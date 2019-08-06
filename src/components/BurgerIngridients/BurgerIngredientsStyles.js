@@ -3,8 +3,8 @@ const burgerIngredientsStyles = {
     height: '13%',
     width: '80%',
     background: 'linear-gradient(#F08E4A, #e27b36)',
-    borderRadius: '0 0 30 30',
-    boxShadow: 'inset -15 0 #c15711',
+    borderRadius: '0 0 30px 30px',
+    boxShadow: 'inset -15px 0 #c15711',
     margin: '2% auto'
   },
   breadTop: {
@@ -12,7 +12,7 @@ const burgerIngredientsStyles = {
     width: '80%',
     background: 'linear-gradient(#bc581e, #e27b36)',
     borderRadius: '50% 50% 0 0',
-    boxShadow: 'inset -15 0 #c15711',
+    boxShadow: 'inset -15px 0 #c15711',
     margin: '2% auto',
     position: 'relative'
   },
@@ -25,9 +25,9 @@ const burgerIngredientsStyles = {
     top: '50%',
     borderRadius: '40%',
     transform: 'rotate(-20deg)',
-    boxShadow: 'inset -2 -3 #c9c9c9',
+    boxShadow: 'inset -2px -3px #c9c9c9',
     '&::after': {
-      content: "",
+      content: '""',
       width: '100%',
       height: '100%',
       position: 'absolute',
@@ -36,10 +36,10 @@ const burgerIngredientsStyles = {
       top: '-260%',
       borderRadius: '40%',
       transform: 'rotate(60deg)',
-      boxShadow: 'inset -1 2 #c9c9c9'
+      boxShadow: 'inset -1px 2px #c9c9c9'
     },
     '&::before': {
-      content: "",
+      content: '""',
       width: '100%',
       height: '100%',
       position: 'absolute',
@@ -48,7 +48,7 @@ const burgerIngredientsStyles = {
       top: '50%',
       borderRadius: '40%',
       transform: 'rotate(60deg)',
-      boxShadow: 'inset -1 -3 #c9c9c9'
+      boxShadow: 'inset -1px -3px #c9c9c9'
     }
   },
   seeds2: {
@@ -60,9 +60,9 @@ const burgerIngredientsStyles = {
     top: '50%',
     borderRadius: '40%',
     transform: 'rotate(10deg)',
-    boxShadow: 'inset -3 0 #c9c9c9',
+    boxShadow: 'inset -3px 0 #c9c9c9',
     '&::before': {
-      content: "",
+      content: '""',
       width: '100%',
       height: '100%',
       position: 'absolute',
@@ -71,7 +71,7 @@ const burgerIngredientsStyles = {
       top: '-130%',
       borderRadius: '40%',
       transform: 'rotate(90deg)',
-      boxShadow: 'inset 1 3 #c9c9c9'
+      boxShadow: 'inset 1px 3px #c9c9c9'
     }
   },
   meat: {

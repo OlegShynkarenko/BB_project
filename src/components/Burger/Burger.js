@@ -1,13 +1,18 @@
-import { css } from '@emotion/core';
-const burgerIngridientsStyles = css`
-   breadBottom: {
-    height: 13%;
-    width: 80%;
-    background: linear-gradient(#F08E4A, #e27b36);
-    border-radius: 0 0 30px 30px;
-    box-shadow: inset -15px 0 #c15711;
-    margin: 2% auto;
-  }
-`;
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
+import React from 'react';
 
-export default burgerIngridientsStyles;
+import { BurgerIngredients } from "../BurgerIngridients/BurgerIngredients";
+import burgerContainerStyles from "./BurgerContainerStyles";
+
+export const Burger = ( props ) => {
+  return (
+    <div css={burgerContainerStyles}>
+      <BurgerIngredients type='bread-top'/>
+      <BurgerIngredients type='cheese'/>
+      <BurgerIngredients type='bacon'/>
+      <BurgerIngredients type='meat'/>
+      <BurgerIngredients type='bread-bottom'/>
+    </div>
+  )
+};

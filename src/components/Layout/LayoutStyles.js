@@ -1,7 +1,8 @@
 const layoutStyles = {
   '.main-content-block': {
-    background: 'green',
     marginTop: 20,
+    maxWidth: '1000px',
+    margin: '0 auto',
   }
 };
 
