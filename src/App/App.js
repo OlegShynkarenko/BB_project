@@ -3,11 +3,15 @@ import React from 'react';
 import { css, jsx } from '@emotion/core';
 
 import styles from './AppStyles'
+import Layout from '../components/Layout/Layout'
+import { BurgerBuilder } from "../containers/BurgerBuilder/BurgerBuilder";
 
 function App() {
   return (
-    <div css={styles.app}>
-
+    <div className="app" css={styles}>
+      <Layout>
+        <BurgerBuilder/>
+      </Layout>
     </div>
   );
 }

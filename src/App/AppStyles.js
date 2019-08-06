@@ -1,9 +1,9 @@
-const appStyles = {
-  app: {
-    background: 'red',
-    margin: '0 auto',
-    textAlign: 'center',
-  }
-};
+import { css } from '@emotion/core';
+
+const appStyles = css`
+  background: red;
+  margin: 0 auto;
+  text-align: center;  
+`;
 
 export default appStyles;
