@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { css, jsx } from '@emotion/core';
+import { jsx } from '@emotion/core';
 
 import { BurgerIngredients } from "../BurgerIngridients/BurgerIngredients";
 import burgerContainerStyles from "./BurgerContainerStyles";
