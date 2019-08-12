@@ -2,7 +2,7 @@
 import { jsx } from '@emotion/core';
 
 import BuildControl from "../BuildControl/BuildControl";
-import buildControlsStyles from "./BuildControlsStyles";
+import { buildControlsStyles, orderButtonStyles } from "./BuildControlsStyles";
 
 const labelTypes = [
   {label: 'Salad', type: 'salad'},
@@ -24,6 +24,7 @@ const buildControls = (props) => {
           isDisabled={props.isDisabled[item.type]}
         />
       })}
+      <button disabled={props.isPurchasable} css={orderButtonStyles}>ORDER NOW</button>
     </div>
   )
 };
