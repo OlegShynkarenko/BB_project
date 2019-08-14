@@ -8,8 +8,8 @@ import {NavigationItems} from "../NavigationItems/NavigationItems";
 export const Toolbar = props => (
     <header css={styles.general}>
       <div>Menu</div>
-      <Logo/>
-      <nav>
+      <Logo css={styles.logo}/>
+      <nav css={styles.nav}>
         <NavigationItems/>
       </nav>
     </header>

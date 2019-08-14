@@ -20,7 +20,8 @@ const sideDrawerStyles = {
     transform: 'translateX(-100%)'
   },
   logo: {
-    height: '11%'
+    height: '11%',
+    marginBottom: '32px'
   }
 };
 

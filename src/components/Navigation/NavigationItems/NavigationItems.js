@@ -6,6 +6,6 @@ import styles from './NavigationItemsStyles';
 export const NavigationItems = (props) => (
     <ul css={styles}>
       <NavigationItem link="/" active>Burger Builder</NavigationItem>
-      <NavigationItem link="/">Burger Checkout</NavigationItem>
+      <NavigationItem link="/">Checkout</NavigationItem>
     </ul>
 );

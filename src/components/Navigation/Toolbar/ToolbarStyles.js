@@ -15,7 +15,13 @@ const toolbarStyles = {
     zIndex: 90,
   },
   nav: {
-    height: '100%'
+    height: '100%',
+    '@media(max-width: 499px)': {
+      display: 'none',
+    }
+  },
+  logo: {
+    height: '80px',
   }
 };
 
