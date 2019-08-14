@@ -4,12 +4,13 @@ import { jsx } from '@emotion/core';
 
 import styles from './LayoutStyles';
 import { Toolbar } from "../Navigation/Toolbar/Toolbar";
+import {SideDrawer} from "../Navigation/SideDrawer/SideDrawer";
 
 const layout = (props) => {
   return(
     <>
       <Toolbar />
-      <div>Sidebar</div>
+      <SideDrawer />
       <main css={styles[".main-content-block"]}>
         {props.children}
       </main>
