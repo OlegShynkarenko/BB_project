@@ -1,4 +1,7 @@
 export const buildControlsStyles = {
+  position: 'fixed',
+  bottom: 0,
+  left: 0,
   width: '100%',
   background: '#cf8f2e',
   display: 'flex',

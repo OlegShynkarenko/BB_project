@@ -2,14 +2,14 @@ import React from 'react';
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import styles from './LayoutStyles'
+import styles from './LayoutStyles';
+import { Toolbar } from "../Navigation/Toolbar/Toolbar";
 
 const layout = (props) => {
   return(
     <>
-      <div>Toolbar</div>
+      <Toolbar />
       <div>Sidebar</div>
-      <div>Backdrop</div>
       <main css={styles[".main-content-block"]}>
         {props.children}
       </main>

@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
 
-import { BurgerIngredients } from "../BurgerIngridients/BurgerIngredients";
+import { BurgerIngredients } from "./BurgerIngridients/BurgerIngredients";
 import burgerContainerStyles from "./BurgerContainerStyles";
 
 export const Burger = ( props ) => {

@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 import { Burger } from "../../components/Burger/Burger";
-import BuildControls from "../../components/BuildControls/BuildControls";
-import Modal from "../../components/Modal/Modal";
-import OrderSummary from "../../components/OrderSummary/OrderSummary";
+import BuildControls from "../../components/Burger/BuildControls/BuildControls";
+import OrderSummaryModal from "../../components/Burger/OrderSummaryModal/OrderSummaryModal";
+import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 import {Backdrop} from "../../components/Backdrop/Backdrop";
 
 const INGREDIENTS_PRICE = {
@@ -39,11 +39,15 @@ export class BurgerBuilder extends Component {
 
   showPurchasingModalHandler = () => {
     this.setState({isPurchasing: true})
-  }
+  };
 
   hidePurchasingModalHandler = () => {
     this.setState({isPurchasing: false})
-  }
+  };
+
+  continuePurchasingHandler = () => {
+    alert('You are continuing purchasing!');
+  };
 
   addIngredientHandler = (type) => {
     const oldIngredient = this.state.ingredients[type];
@@ -90,9 +94,9 @@ export class BurgerBuilder extends Component {
     return (
         <>
           <Backdrop show={this.state.isPurchasing} hide={this.hidePurchasingModalHandler}/>
-          <Modal show={this.state.isPurchasing}>
-            <OrderSummary ingredients={this.state.ingredients}/>
-          </Modal>
+          <OrderSummaryModal show={this.state.isPurchasing} hide={this.hidePurchasingModalHandler} continue={this.continuePurchasingHandler}>
+            <OrderSummary ingredients={this.state.ingredients} totalSum={this.state.totalPrice}/>
+          </OrderSummaryModal>
           <Burger ingredients={this.state.ingredients}/>
           <BuildControls
               isDisabled={disabled}

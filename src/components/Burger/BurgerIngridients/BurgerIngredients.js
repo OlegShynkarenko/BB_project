@@ -12,7 +12,7 @@ export class BurgerIngredients extends Component {
 
     switch (ingredientsType) {
       case ('bread-bottom'):
-        ingredients = <div css={burgerIngredientsStyles.breadBottom}/>
+        ingredients = <div css={burgerIngredientsStyles.breadBottom}/>;
         break;
       case ('bread-top'):
         ingredients = (
@@ -23,16 +23,16 @@ export class BurgerIngredients extends Component {
         );
         break;
       case ('meat'):
-        ingredients = <div css={burgerIngredientsStyles.meat}/>
+        ingredients = <div css={burgerIngredientsStyles.meat}/>;
         break;
       case ('cheese'):
-        ingredients = <div css={burgerIngredientsStyles.cheese}/>
+        ingredients = <div css={burgerIngredientsStyles.cheese}/>;
         break;
       case ('salad'):
-        ingredients = <div css={burgerIngredientsStyles.salad}/>
+        ingredients = <div css={burgerIngredientsStyles.salad}/>;
         break;
       case ('bacon'):
-        ingredients = <div css={burgerIngredientsStyles.bacon}/>
+        ingredients = <div css={burgerIngredientsStyles.bacon}/>;
         break;
       default:
         ingredients = null;
@@ -43,8 +43,8 @@ export class BurgerIngredients extends Component {
   render() {
     return this.handleIngredientsRender(this.props.type)
   }
-};
+}
 
 BurgerIngredients.propTypes = {
   type: PropTypes.string.isRequired,
-}
+};
