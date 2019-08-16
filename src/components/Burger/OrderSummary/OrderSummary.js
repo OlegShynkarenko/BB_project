@@ -1,10 +1,9 @@
 import React from 'react';
 
 const OrderSummary = (props) => {
-
   const ingredientsSummary = Object.entries(props.ingredients).map( array => {
     return (
-        <li key={array[0]+array[1]}><span style={{textTransform: 'capitalize'}}>{array[0]}: </span>{array[1]}</li>
+     <li key={array[0]+array[1]}><span style={{textTransform: 'capitalize'}}>{array[0]}: </span>{array[1]}</li>
     )
   });
 
@@ -21,4 +20,4 @@ const OrderSummary = (props) => {
   )
 };
 
-export default OrderSummary;
+export default React.memo(OrderSummary,(prevProps, nextProps) => prevProps === nextProps);

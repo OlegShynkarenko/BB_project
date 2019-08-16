@@ -9,7 +9,7 @@ const sideDrawerStyles = {
   background: 'white',
   padding: '32px 16px',
   boxSizing: 'border-box',
-  transition: 'transform 0.3 ease-out',
+  transition: 'transform 0.3s ease-out',
   '@media(min-width: 500px)': {
     display: 'none'
   },
