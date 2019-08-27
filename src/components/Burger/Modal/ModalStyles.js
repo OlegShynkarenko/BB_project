@@ -1,4 +1,4 @@
-const orderSummaryModalStyles = {
+const modal = {
   general: {
     position: 'fixed',
     zIndex: '500',
@@ -22,4 +22,4 @@ const orderSummaryModalStyles = {
   }
 };
 
-export default orderSummaryModalStyles;
+export default modal;
