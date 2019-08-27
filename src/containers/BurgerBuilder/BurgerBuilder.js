@@ -33,7 +33,7 @@ class BurgerBuilder extends Component {
   fetchIngredients = async () => {
     try {
       const request = await axios.get('/ingredients.json');
-      return this.setState({ingredients: request.data})
+      this.setState({ingredients: request.data});
     } catch (e) {
       console.log('Something went wrong', e);
       this.setState({error: true});
