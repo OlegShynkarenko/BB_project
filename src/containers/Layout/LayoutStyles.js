@@ -1,7 +1,7 @@
 const layoutStyles = {
-  '.main-content-block': {
-    paddingTop: 100
- }
+  ".main-content-block": {
+    paddingTop: 56
+  }
 };
 
 export default layoutStyles;
