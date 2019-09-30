@@ -20,7 +20,7 @@ export const Burger = ( props ) => {
   }
 
   return (
-    <div css={burgerContainerStyles}>
+    <div css={burgerContainerStyles} style={{height: 'calc(100vh - 347px'}}>
       <BurgerIngredients type='bread-top'/>
         {ingredientsTypes}
       <BurgerIngredients type='bread-bottom'/>

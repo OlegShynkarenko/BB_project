@@ -1,6 +1,6 @@
 const burgerIngredientsStyles = {
    breadBottom: {
-    height: '13%',
+    height: '12%',
     width: '80%',
     background: 'linear-gradient(#F08E4A, #e27b36)',
     borderRadius: '0 0 30px 30px',
@@ -8,7 +8,7 @@ const burgerIngredientsStyles = {
     margin: '2% auto'
   },
   breadTop: {
-    height: '20%',
+    height: '13%',
     width: '80%',
     background: 'linear-gradient(#bc581e, #e27b36)',
     borderRadius: '50% 50% 0 0',

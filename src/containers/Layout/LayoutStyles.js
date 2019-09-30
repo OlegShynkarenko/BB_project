@@ -1,6 +1,6 @@
 const layoutStyles = {
   '.main-content-block': {
-    marginTop: '72px',
+    paddingTop: 100
  }
 };
 
